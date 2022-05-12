@@ -17,7 +17,6 @@ body {
     justify-content: space-between;
     flex-direction: row;
 }
-
 .new-button__mod {
     background-color: #457b9d;
     color: white;
@@ -37,7 +36,6 @@ summary {
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
         "Lucida Sans", Arial, sans-serif;
 }
-
 .header {
     display: flex;
     align-items: center;
@@ -46,6 +44,16 @@ summary {
     color: #212529;
     h1 {
         font-size: larger;
+
+    }
+    &__nav {
+        list-style: none;
+        display: flex;
+        gap: 1rem;
+        &-bold {
+            font-weight: bolder;
+        }
+
     }
     &__nav {
         list-style: none;
@@ -55,6 +63,24 @@ summary {
             font-weight: bolder;
         }
     }
+    &__nav {
+        list-style: none;
+        display: flex;
+        gap: 1rem;
+        &-bold {
+            font-weight: bolder;
+        }
+    }
+}
+a {
+    color: #212529;
+    text-decoration: none;
+    font-weight: lighter;
+}
+a {
+    color: #212529;
+    text-decoration: none;
+    font-weight: lighter;
 }
 a {
     color: #212529;
