@@ -5,12 +5,73 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="css/style.css" />
-        <title>SASS.scss</title>
+        <title>ISDI Amazon</title>
     </head>
     <body>
-        <header>
-            <h1>SASS</h1>
+        <header class="header">
+            <h1>Lista de la compra</h1>
+            <nav>
+                <ul class="header__nav">
+                    <li><a href="index.html">Principal</a></li>
+                    <li>
+                        <a href="lista.html" class="header__nav-bold">Lista</a>
+                    </li>
+                    <li><a href="about.html">Acerca de</a></li>
+                </ul>
+            </nav>
         </header>
-        <div>Jose Armando</div>
+        <section>
+            <header>
+                <div class="sub-menu">
+                    <details class="new-product">
+                        <summary class="new-product__start">➕</summary>
+                        <div>
+                            <form class="add-form" action="">
+                                <div class="user-name">
+                                    <p>Nombre:</p>
+                                    <input type="text" name="user-in" id="" />
+                                </div>
+                                <div class="items-cost">
+                                    <p class="">Precio:</p>
+                                    <input type="text" name="cost-in" id="" /> €
+                                </div>
+                                <div class="new-button">
+                                    <p class="new-button__mod">Modificar</p>
+                                </div>
+                            </form>
+                        </div>
+                    </details>
+                    <div class="sub-menu__product-total">
+                        <p>2/3 comprados</p>
+                    </div>
+                </div>
+                <div></div>
+            </header>
+            <form class="shop-list" action="">
+                <ul class="cart-list">
+                    <li class="cart-list__items">
+                        <div class="items">
+                            <input type="checkbox" name="items__name" id="" />
+                            <p class="product">Pan</p>
+                        </div>
+                        <div><p class="cost">0.75€</p></div>
+                    </li>
+                    <li>
+                        <div class="items">
+                            <input type="checkbox" name="items__name" id="" />
+                            <p class="product">Azúcar</p>
+                        </div>
+                        <div><p class="cost"></p></div>
+                    </li>
+                    <li>
+                        <div class="items">
+                            <input type="checkbox" name="items__name" id="" />
+                            <p class="product">Leche</p>
+                        </div>
+                        <div><p class="cost">1.20€</p></div>
+                    </li>
+                </ul>
+            </form>
+        </section>
     </body>
 </html>
