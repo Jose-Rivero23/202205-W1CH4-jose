@@ -1,15 +1,30 @@
-$primary-color: bisque;
-
-$secondary-color: crimson;
-/* se pueden poner variables usando el $ como en PHP  tambien puede usarse mixin con parametros*/
-@mixin basic-colors {
-    color: $primary-color;
-    background-color: blueviolet;
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
 }
 
-body {
-    @include basic-colors();
-    div {
-        @include basic-colors();
+.header {
+    display: flex;
+    align-items: center;
+    background-color: #457b9d;
+    height: 20vh;
+    color: #212529;
+    h1 {
+        font-size: larger;
     }
+    &__nav {
+        list-style: none;
+        display: flex;
+        gap: 1rem;
+        &-bold {
+            font-weight: bolder;
+        }
+    }
+}
+a {
+    color: #212529;
+    text-decoration: none;
+    font-weight: lighter;
 }

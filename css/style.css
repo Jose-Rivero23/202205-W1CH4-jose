@@ -1,9 +1,30 @@
-/* se pueden poner variables usando el $ como en PHP  tambien puede usarse mixin con parametros*/
-body {
-  color: bisque;
-  background-color: blueviolet;
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
-body div {
-  color: bisque;
-  background-color: blueviolet;
+
+.header {
+  display: flex;
+  align-items: center;
+  background-color: #457b9d;
+  height: 20vh;
+  color: #212529;
+}
+.header h1 {
+  font-size: larger;
+}
+.header__nav {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+.header__nav-bold {
+  font-weight: bolder;
+}
+
+a {
+  color: #212529;
+  text-decoration: none;
+  font-weight: lighter;
 }
