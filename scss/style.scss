@@ -1,4 +1,3 @@
-
 li {
     list-style: none;
     display: flex;
@@ -37,15 +36,6 @@ summary {
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
         "Lucida Sans", Arial, sans-serif;
 }
-
-* {
-    box-sizing: border-box;
-    margin: 0 auto;
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-        "Lucida Sans", Arial, sans-serif;
-}
-
-
 .header {
     display: flex;
     align-items: center;
@@ -73,6 +63,19 @@ summary {
             font-weight: bolder;
         }
     }
+    &__nav {
+        list-style: none;
+        display: flex;
+        gap: 1rem;
+        &-bold {
+            font-weight: bolder;
+        }
+    }
+}
+a {
+    color: #212529;
+    text-decoration: none;
+    font-weight: lighter;
 }
 a {
     color: #212529;
