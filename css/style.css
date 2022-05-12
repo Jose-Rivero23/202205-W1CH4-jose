@@ -19,6 +19,14 @@ body {
   background-color: #ff6709;
   justify-content: space-between;
   flex-direction: row;
+  align-items: center;
+  height: 10vh;
+}
+.sub-menu .new-product__start {
+  font-size: x-large;
+}
+.sub-menu .sub-menu__product-total {
+  font-size: larger;
 }
 
 .new-button__mod {
@@ -34,12 +42,6 @@ body {
 summary {
   display: block;
   list-style: none;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0 auto;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
 * {
