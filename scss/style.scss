@@ -1,0 +1,15 @@
+$primary-color: bisque;
+
+$secondary-color: crimson;
+/* se pueden poner variables usando el $ como en PHP  tambien puede usarse mixin con parametros*/
+@mixin basic-colors {
+    color: $primary-color;
+    background-color: blueviolet;
+}
+
+body {
+    @include basic-colors();
+    div {
+        @include basic-colors();
+    }
+}
